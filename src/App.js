@@ -15,7 +15,7 @@ useEffect(() => {
  
   const fetchData = async () => {
     try {
-      const response = await axios.get('http://localhost:7001/products'); // Make a GET request to your API endpoint
+      const response = await axios.get('https://webscrappingbe.onrender.com/products'); // Make a GET request to your API endpoint
       console.log(response.data)
       setSearchResults(response.data); // Update the searchResults state with the fetched data
     } catch (error) {
